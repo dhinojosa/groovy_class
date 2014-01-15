@@ -32,6 +32,7 @@ class Artist {
 
     @Override
     boolean equals(o) {
+        if (!(o instanceof Artist)) return false
         o.firstName.equals(firstName) &&
         o.lastName.equals(lastName)
     }

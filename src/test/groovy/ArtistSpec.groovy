@@ -56,6 +56,6 @@ class ArtistSpec extends Specification {
           englebert == englebert2
           englebert2 == englebert
           englebert != torme
-          englebert == "54"
+          englebert != "54"
    }
 }
