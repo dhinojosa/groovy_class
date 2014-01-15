@@ -52,7 +52,7 @@ class ArtistSpec extends Specification {
                                  lastName: "Torme")
 
        expect:
-          englebert.toString() == "Artist(Englebert, Humperdinck)"
+          englebert.toString() == "edu.unm.studentweb.Artist(Englebert, Humperdinck)"
           englebert == englebert2
           englebert2 == englebert
           englebert != torme
