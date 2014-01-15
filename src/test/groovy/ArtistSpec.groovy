@@ -57,5 +57,26 @@ class ArtistSpec extends Specification {
           englebert2 == englebert
           englebert != torme
           englebert != "54"
+          englebert.is(englebert)
+
+          englebert.hashCode() == englebert.hashCode() //This rule has to pass
+          englebert.hashCode() == englebert2.hashCode()
+
+          //trying out a list
+          def list = [1,2,3,4,5,5,6]
+          list.size() == 7
+          println list.class.name
+
+          /* Sets have to be unique!*/
+          Set set = [1,2,3,4,5,5,6] //coercion
+          set.class.name.contains('Set')
+          println (set.class.name)
+          set.size() == 6
+          println (set)
+
+          Set artistSet = [englebert,englebert,torme,englebert2]
+          artistSet.size() == 2
+
+
    }
 }

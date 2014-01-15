@@ -36,4 +36,12 @@ class Artist {
         o.firstName.equals(firstName) &&
         o.lastName.equals(lastName)
     }
+
+    @Override
+    int hashCode() {
+        int result
+        result = (firstName != null ? firstName.hashCode() : 0)
+        result = 113 * result + (lastName != null ? lastName.hashCode() : 0)
+        return result
+    }
 }
